@@ -460,6 +460,9 @@ height: 60%;
 fill: white;
 }
 
+.whatsapp i {
+    font-size: 35px;   
+}
 
 @media(max-width:600px){
 :root{ --size:50px; --right-offset:14px; --bottom-offset:14px; }
