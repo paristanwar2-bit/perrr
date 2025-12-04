@@ -562,7 +562,7 @@ nav ul li a{
     text-align: center;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     transition: 0.3s;
-     height: auto;  
+     height: max-content;  
      flex-direction: column;
 }
 
@@ -975,12 +975,12 @@ nav ul li a{
 }
 
 
-    '/* Filter always left */
+    /* Filter always left */
     .filter-box {
         width: 100%;
         position: relative;
         z-index: 10;
-    }'
+    }
 
     .products {
     display: grid;

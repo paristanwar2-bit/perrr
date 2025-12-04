@@ -102,3 +102,4 @@ function closeQuickView(){
 function wishlist(){
     alert("Added to Wishlist ❤️");
 }
+

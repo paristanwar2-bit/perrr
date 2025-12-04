@@ -452,7 +452,7 @@ nav ul li a{
 .view-more-box {
     width: 100%;
     display: flex;
-    justify-content: center;  /* center horizontally */
+    justify-content: center;  
     margin: 30px 0 50px;
 }
 
@@ -474,6 +474,105 @@ nav ul li a{
 }
   
 
+
+
+/* ANIMATION */
+@keyframes show{
+    from{transform:scale(0.95);opacity:0;}
+    to{transform:scale(1);opacity:1;}
+}
+
+/* LEFT IMAGE */
+.modal-left img{
+    width:320px;
+    height:330px;
+    object-fit:cover;
+    border-radius:12px;
+}
+
+/* RIGHT SIDE */
+.modal-right{
+    flex:1;
+}
+
+.old-price{
+    text-decoration:line-through;
+    color:#777;
+    font-size:17px;
+}
+.new-price{
+    color:#E80063;
+    font-size:22px;
+    font-weight:700;
+}
+
+/* QUANTITY */
+.qty-box{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin:15px 0;
+}
+.qty-btn{
+    width:32px;
+    height:32px;
+    border:none;
+    background:#eee;
+    border-radius:6px;
+    font-size:20px;
+    cursor:pointer;
+}
+#qtyInput{
+    width:40px;
+    height:32px;
+    text-align:center;
+}
+
+/* BUTTONS */
+.modal-buttons{
+    display:flex;
+    gap:12px;
+    margin-top:20px;
+}
+.buy-now{
+    background:#FF006A;
+    color:white;
+    padding:10px 20px;
+    border-radius:8px;
+    border:none;
+    cursor:pointer;
+}
+.add-cart{
+    background:#7B00FF;
+    color:white;
+    padding:10px 20px;
+    border-radius:8px;
+    border:none;
+    cursor:pointer;
+}
+
+/* CLOSE BUTTON */
+.close-btn{
+    position:absolute;
+    right:25px;
+    top:15px;
+    font-size:28px;
+    cursor:pointer;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .modal-content{
+        flex-direction:column;
+        width:90%;
+    }
+    .modal-left img{
+        width:100%;
+        height:260px;
+    }
+}
+
+
 /* RESPONSIVE */
 @media(max-width:992px){
     .product-wrapper{grid-template-columns:repeat(2,1fr);}
@@ -483,6 +582,7 @@ nav ul li a{
     .product-card img{height:200px;}
     .section-title{font-size:26px;}
 }
+
 
 /* top seller  */
 .product-section {
@@ -1098,6 +1198,42 @@ nav ul li a{
     font-weight: 600;
     margin-bottom: 16px;
     color: #7b4f2a;
+}
+
+.social-links a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* background: #fff; */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    font-size: 18px;
+    /* color: #333; */
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    /* background: #7B0036; */
+    /* color: #fff; */
+}
+
+.social-links a {
+    color: #3b2f28; 
+    font-size: 20px;
+    margin-right: 10px;
+    transition: 0.3s ease;
+}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+    .footer-col {
+        text-align: center;
+    }
+    .social-links a {
+        margin: 8px;
+    }
 }
 
 /* Links */

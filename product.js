@@ -41,6 +41,7 @@ minus.addEventListener("click", () => {
     }
 });
 
+
 // ---------------- POPUP FUNCTION ----------------
 const viewButtons = document.querySelectorAll(".view-btn");
 const popup = document.getElementById("popupModal");
