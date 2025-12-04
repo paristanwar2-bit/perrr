@@ -469,3 +469,65 @@ nav ul li a{
     }
 }
 
+
+/* Floating WhatsApp & Call Buttons */
+:root{
+--size:60px;
+--gap:12px;
+--right-offset:20px;
+--bottom-offset:20px;
+}
+
+
+.floating-actions{
+position: fixed;
+right: var(--right-offset);
+bottom: var(--bottom-offset);
+display: flex;
+flex-direction: column;
+gap: var(--gap);
+z-index: 999999;
+}
+
+
+.action-btn{
+width: var(--size);
+height: var(--size);
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+text-decoration: none;
+transition: transform 0.2s ease;
+}
+
+
+.action-btn:hover{
+transform: translateY(-6px);
+}
+
+
+/* WhatsApp */
+.whatsapp{
+background: #25D366;
+}
+
+
+/* Call */
+.call{
+background: #007AFF;
+}
+
+
+.floating-actions svg{
+width: 60%;
+height: 60%;
+fill: white;
+}
+
+
+@media(max-width:600px){
+:root{ --size:50px; --right-offset:14px; --bottom-offset:14px; }
+}
